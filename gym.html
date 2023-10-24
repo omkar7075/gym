@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Ahaan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <style>
+      /* css reset */
+      body {
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        background-image: url("gym.jpg");
+        background-color: black;
+        background-size:contain;
+        background-repeat: no-repeat;
+      }
+      /* .left{
+            display: inline-block;
+            position:absolute;
+            border:2px solid red;
+            margin-top:20px;
+            margin-left:34px;
+
+        } */
+      .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+      }
+
+      .left img{
+         width: 110px;
+         border-radius: 10px;
+      }
+      .left div{
+          cursor: pointer;
+          text-align: center;
+          font-family: 'Kanit', sans-serif;
+          font-size:19px;
+      }
+      .left:hover{
+        font-size:23px ;
+        filter:invert(100%);
+      }
+      .mid {
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
+        /* border: 2px solid rgb(250, 200, 250); */
+      }
+      .right {
+        position: absolute;
+        display: inline-block;
+        /* border: 2px solid rgb(130, 238, 238); */
+        right: 34px;
+        top: 29px;
+      }
+
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+        font-size: 19px;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 34px 23px;
+      }
+      .navbar li a:hover,
+      .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(180, 172, 172);
+
+      }
+
+      .btn{
+          margin:0px 9px;
+          background-color: black;
+          color: white;
+          padding:4px 14px;
+          border:2px solid grey;
+          border-radius: 15px;
+          font-size:15px;
+          cursor: pointer;
+          font-family: 'Kanit', sans-serif;
+      }
+      .btn:hover{
+          background-color: rgb(131, 127, 127);
+          
+      }
+      .container{
+            text-align: center;
+            border: 2px solid white;
+            margin: 50px 50px;
+            height: 310px;
+            margin-left: 700px;
+            padding: 40px;
+            padding-top:10px;
+            border-radius: 10px;
+      }
+      .container:hover{
+        background-color:rgba(207, 202, 202, 0.075);
+      }
+      .container h1{
+        font-size:31px;
+      }
+      .form-group{
+        
+        margin: auto;
+      }
+      .form-group input{
+            font-family: 'Kanit', sans-serif;
+            display: block;
+            text-align: center;
+            border: 2px solid grey;
+            border-radius: 15px;
+            width: 300px;
+            padding: 9px;
+            margin: 10px auto;
+            font-size: 12px;
+      }
+      .container button{
+          width: 73%;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+        <!-- left box for logo -->
+      <div class="left">
+        <img src="dumble.jpg" alt="" >
+        <div>Fitness First</div>
+      </div>
+     
+      <!-- mid box for navigation -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- right box for buttons -->
+      <div class="right">
+      <button class="btn">Call Us Now</button>
+      <button class="btn">Email Us</button>
+    </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in pune now..</h1>
+        
+        <form action="noaction.php">
+          <div class="form-group">
+            <input type="text" name="" id="" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <input type="text" name="" id="" placeholder="Enter your age">
+          </div>
+          <div class="form-group">
+            <input type="text" name="" id="" placeholder="Enter your gender">
+          </div>
+          <div class="form-group">
+            <input type="text" name="" id="" placeholder="Enter your locality">
+          </div>
+          <div><button class="btn">Submit</button> </div>
+          </form>
+    </div>
+  </body>
+</html>
